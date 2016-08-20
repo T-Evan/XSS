@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+
+
+    <ImageView
+        android:id="@+id/book_image"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/app_name"
+        android:background="#e0ffffff"
+        android:elevation="5dp"
+        android:onClick="book_image"
+    />
+
+    <TextView
+        android:id="@+id/book_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textcolor"
+        android:layout_alignLeft="@+id/book_image"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:layout_below="@+id/book_image"/>
+
+</RelativeLayout>

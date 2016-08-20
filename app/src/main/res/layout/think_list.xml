@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cjj.MaterialRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/refresh"
+    app:overlay="true"
+    app:wave_show="true"
+    app:wave_color="#00000000"
+    app:progress_colors="@array/material_colors"
+    app:wave_height_type="higher"
+    >
+
+    <ScrollView android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/think">
+
+            <com.twotoasters.jazzylistview.JazzyListView
+                android:id="@+id/think_list"
+                android:divider="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</com.cjj.MaterialRefreshLayout>

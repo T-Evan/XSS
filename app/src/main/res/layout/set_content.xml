@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:background="@color/white"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/xiaoxi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="消息提醒"
+        android:textSize="16sp"
+        android:textColor="@color/textcolor"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        />
+
+
+    <com.kyleduo.switchbutton.SwitchButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        style="@style/SwitchButtonMD"
+        />
+
+</RelativeLayout>
+    <ImageView
+        android:layout_below="@+id/xiaoxi"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="@color/bg"
+        />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/white"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <TextView
+            android:id="@+id/qingchu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清除缓存"
+            android:textSize="16sp"
+            android:textColor="@color/textcolor"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/white"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <TextView
+            android:id="@+id/fankui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="意见反馈"
+            android:textSize="16sp"
+            android:textColor="@color/textcolor"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            />
+    </RelativeLayout>
+    <ImageView
+        android:layout_below="@+id/xiaoxi"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bg"
+        />
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/white"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <TextView
+            android:id="@+id/guanyu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关于我们"
+            android:textSize="16sp"
+            android:textColor="@color/textcolor"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            />
+    </RelativeLayout>
+    <ImageView
+        android:layout_below="@+id/xiaoxi"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="@color/bg"
+        />
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/white"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <TextView
+            android:id="@+id/tuichu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="退出登录"
+            android:textSize="16sp"
+            android:textColor="#fa4343"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            />
+    </RelativeLayout>
+</LinearLayout>

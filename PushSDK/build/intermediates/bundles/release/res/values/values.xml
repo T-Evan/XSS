@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent_material_light">#0093ff</color>
+    <color name="background_material_light">#70c2ff</color>
+    <color name="primary_material_light">#70c2ff</color>
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.administrator.xss.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/topbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp"
+
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            app:titleTextColor="@color/textcolor"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:clickable="true"
+
+            />
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="#00ffffff"
+        >
+        <ImageButton
+            android:id="@+id/top_menu"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_menu_black_24dp"
+            android:onClick="topmenu"
+            />
+        <ImageButton
+            android:id="@+id/button_add"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="25dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_add_black_24dp"
+            android:onClick="add"
+            />
+        <ImageButton
+            android:id="@+id/search"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/button_add"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="25dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_search_indigo_400_24dp"
+            android:onClick="search"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="首页"
+            android:textSize="20sp"
+            android:textColor="@color/textcolor"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="61dp"
+            />
+        <br.com.mauker.materialsearchview.MaterialSearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/MaterialSearchViewStyle"/>
+
+
+
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

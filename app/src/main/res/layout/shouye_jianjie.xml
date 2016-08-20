@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="255dp"
+    android:background="@color/white"
+    android:id="@+id/think_layout">
+    <TextView
+        android:id="@+id/think_toptext"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textcolor"
+        android:textSize="16sp"
+        android:text="读书见解"
+        />
+
+    <RelativeLayout
+        android:id="@+id/think_book"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/think_toptext"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rectangle"
+        android:onClick="think_book"
+        >
+    <ImageView
+        android:id="@+id/think_book_image"
+        android:layout_width="30dp"
+        android:layout_height="42dp"
+        android:layout_margin="6dp"
+        android:src="@drawable/jianjie"
+        />
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/bg"
+            android:layout_toRightOf="@+id/think_book_image"
+            />
+        <TextView
+        android:id="@+id/think_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_toRightOf="@+id/think_book_image"
+            android:text="与你在书中相遇"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="100dp"
+        android:textColor="@color/textcolor_e"/>
+    <TextView
+        android:id="@+id/think_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/think_text1"
+        android:layout_toRightOf="@+id/think_book_image"
+        android:textSize="12sp"
+        android:layout_marginLeft="70dp"
+        android:text="和读同一本书的同学分享见解"
+      />
+        </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/bg2"
+        android:layout_below="@+id/bg"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_glass"/>
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/test"
+        />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_alignTop="@+id/avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/avatar"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/textcolor_e"
+        />
+    <TextView
+        android:id="@+id/user_news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/avatar"
+        android:layout_below="@+id/user_name"
+        android:layout_marginLeft="10dp"
+        android:lineSpacingExtra="8dp"
+        />
+    <TextView
+        android:id="@+id/send_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/user_name"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp" />
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_below="@+id/user_news"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bg"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_below="@+id/ready"
+  >
+    <TextView
+        android:id="@+id/text_recommend"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="16sp"
+        android:text="每日推荐"
+        android:textColor="@color/textcolor_e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      />
+
+    <ImageView
+        android:id="@+id/recommend_book"
+        android:background="#e0ffffff"
+        android:scaleType="fitXY"
+        android:elevation="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="58dp"
+        android:layout_height="81dp"
+        android:layout_below="@+id/text_recommend" />
+    <!--android:background="@drawable/shadow"-->
+    <TextView
+        android:id="@+id/recommend_book_state"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:layout_alignBottom="@+id/recommend_book_name"
+        android:layout_alignRight="@+id/recommend_button_add"
+        />
+    <TextView
+        android:id="@+id/recommend_book_name"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@+id/text_recommend"
+        android:layout_toRightOf="@+id/recommend_book"
+        android:layout_marginRight="12dp"
+        android:textColor="@color/textcolor_e"/>
+    <TextView
+        android:id="@+id/recommend_book_writer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recommend_book_name"
+        android:layout_marginTop="4dp"
+        android:layout_alignLeft="@+id/recommend_book_name"
+        android:textSize="12sp"
+        android:textColor="@color/textcolor_e"/>
+    <TextView
+        android:id="@+id/recommend_book_location"
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recommend_book_writer"
+        android:layout_alignLeft="@+id/recommend_book_writer"
+        android:textSize="12sp"
+        />
+    <TextView
+
+        android:id="@+id/recommend_book_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textSize="12sp"
+        android:layout_alignBottom="@+id/recommend_book"
+        android:layout_alignLeft="@+id/recommend_book_location"
+        android:layout_alignStart="@+id/recommend_book_location" />
+    <Button
+        android:layout_marginRight="20dp"
+        android:id="@+id/recommend_button_add"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/recommend_book_value"
+        android:background="@drawable/ic_more_vert_grey600_24dp"
+        />
+    <TextView
+        android:id="@+id/recommend_book_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recommend_book"
+        android:layout_alignLeft="@id/recommend_book"
+        android:layout_marginTop="20dp"
+        />
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_below="@+id/recommend_book_from"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/bg"/>
+
+    />
+
+</RelativeLayout>
+
+<!--android:layout_below="@+id/txt_title"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_marginTop="10dp">-->

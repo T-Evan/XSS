@@ -1,0 +1,114 @@
+<?xml version="1.1" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.xss" >
+    <uses-sdk android:minSdkVersion="21"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        >
+        <meta-data android:value="5710f6f7e0f55a814a000763" android:name="UMENG_APPKEY"/>
+        <meta-data android:value="wandoujia" android:name="UMENG_CHANNEL"/>
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5710f6f7e0f55a814a000763" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="545c8e16c7c4f84d5e48baf7cd514ce2" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="wandoujia" >
+        </meta-data>
+        <activity android:name=".Login_1"
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar"
+            >   <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login_2"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="登录"
+            >
+        </activity>
+        <activity
+            android:name=".Login_3"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="选择头像"
+            >
+        </activity>
+        <activity
+            android:name=".News"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="消息"
+            >
+        </activity>
+        <activity
+            android:name=".Thinks"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+        </activity>
+        <activity
+            android:name=".My_jianjie"
+            android:launchMode="singleTask"
+
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+        </activity>
+        <activity
+            android:name=".ShuJia"
+            android:launchMode="singleTask"
+
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+        </activity>
+        <activity
+            android:name=".ShuDan"
+            android:launchMode="singleTask"
+
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+        </activity>
+        <activity
+            android:name=".ShuDan_details"
+            android:launchMode="singleTask"
+
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+        </activity>
+        <activity
+            android:name=".Set"
+            android:launchMode="singleTask"
+
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+        </activity>
+        <provider
+            android:name="br.com.mauker.materialsearchview.db.HistoryProvider"
+            android:authorities="br.com.mauker.materialsearchview.searchhistorydatabase"
+            android:exported="false"
+            android:protectionLevel="signature"
+            android:syncable="true"/>
+    </application>
+
+</manifest>

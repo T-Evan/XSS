@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.example.administrator.xss"
+        minSdkVersion 19
+        versionCode 1
+        versionName "1.1"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    mavenCentral()
+
+}
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.2.1'
+    compile 'com.android.support:design:23.2.1'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'com.twotoasters.jazzylistview:library:1.2.1'
+    compile 'com.twotoasters.jazzylistview:library-recyclerview:1.2.1'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'com.github.jd-alexander:LikeButton:0.2.0'
+    compile 'com.github.allan1st:JellyRefreshLayout:1.0.0'
+    compile 'com.ms-square:etsyblur:0.1.3'
+    compile 'hanks.xyz:smallbang-library:0.1.2'
+    compile 'com.baoyz.pullrefreshlayout:library:1.2.0'
+    compile 'com.cjj.materialrefeshlayout:library:1.3.0'
+    compile 'br.com.mauker.materialsearchview:materialsearchview:1.1.0'
+    compile project(':PushSDK')
+    compile 'com.android.support:support-v4:23.4.0'
+    compile "com.flyco.systembar:FlycoSystemBar_Lib:1.0.0@aar"
+    compile 'com.kyleduo.switchbutton:library:1.4.1'
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.administrator.xss.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/topbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp"
+
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            app:titleTextColor="@color/textcolor"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:clickable="true"
+            />
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/white"
+        >
+        <ImageButton
+            android:id="@+id/top_back"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_arrow_back_indigo_a200_24dp"
+            android:onClick="back"
+            android:layout_marginRight="20dp"
+
+            />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="见解"
+    android:textSize="20sp"
+    android:textColor="@color/textcolor"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="61dp"
+    />
+        <ImageButton
+            android:id="@+id/button_add"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="25dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_add_black_24dp"
+            android:onClick="add"
+            />
+        <ImageView
+            android:id="@+id/bg"
+            android:layout_marginTop="56dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg"
+            />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
